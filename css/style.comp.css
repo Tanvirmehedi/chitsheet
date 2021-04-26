@@ -92,7 +92,7 @@ strong {
 .nav-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   position: relative;
   /* min-height: 70vh; */ }
@@ -107,7 +107,13 @@ strong {
   border-radius: 15px;
   color: #fff;
   font-size: 1.2rem;
-  font-weight: 600; }
+  font-weight: 600;
+  transition: all 0.1s linear;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.534); }
+
+.nav-link:active {
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0); }
 
 /* ------------------title---------------------- */
 .title {
