@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChitSheet</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="img/devtjw.png" class="logo" alt="logo" />
+      <span><b>Tutorial-HomePage</b></span>
+      <span><a href="index.html">Home</a></span>
+    </nav>
+    <div class="container">
+      <!------------------------- Main Content --------------------------->
+      <main>
+        <div class="contant">
+          <!-- ==============================================** ==================================-->
+          <pre class="language-html"><code>
+          &lt;!=====================================2ndsec==========================================--&gt;
+                        </code></pre>
+          <!-- ==============================================** ==================================-->
+          <section class="1stsec">
+            <div class="title"><strong>Git CommentLine</strong></div>
+            <div class="wlcmText">
+              Git is a free and open source distributed version control system
+              designed to handle everything from small to very large projects
+              with speed and efficiency. Git is easy to learn and has a tiny
+              footprint with lightning fast performance. It outclasses SCM tools
+              like Subversion, CVS, Perforce, and ClearCase with features like
+              cheap local branching, convenient staging areas, and multiple
+              workflows.
+            </div>
+            <div class="title">Git Configaration</div>
+            <pre class="language-js"><code>
+//install git 
+https://git-scm.com/
+
+//git-config for new machin
+//for user name
+git config --global user.name Tanvirmehedi
+
+//for user email
+git config --global user.email tjmehedi201@gmail.com
+
+//for chack user name & email
+git config --global user.name
+git config --global user.email
+            </code></pre>
+          </section>
+
+          <!=====================================2ndsec==========================================-->
+          <section class="2ndsec">
+            <div class="title"><strong>Git initialization</strong></div>
+            <div class="wlcmText">use new project in git repository</div>
+            <pre class="language-js"><code>
+//git initialization
+git init
+
+//for chack git status
+git status
+
+//for add git one file 
+git add filename.html
+
+//for add git all file
+git add -A
+
+//git commit with "message"
+git commit -m "Message here"
+
+            </code></pre>
+          </section>
+
+          <!=====================================3rdsec==========================================-->
+
+          <section class="3rdsec">
+            <div class="title">
+              <strong>Repository on the command line</strong>
+            </div>
+            <pre class="language-js"><code>
+//final upload repo
+git init
+git add -A
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Tanvirmehedi/chitsheet.git
+git push -u origin main
+            </code></pre>
+          </section>
+        </div>
+      </main>
+      <!------------------------- End Main Content --------------------------->
+      <footer>
+        <div class="title"><a href="#">@All Right Reserve DevTj 2021</a></div>
+      </footer>
+    </div>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

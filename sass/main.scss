@@ -1,0 +1,61 @@
+@import "basic";
+@import "nav";
+@import "footer";
+@import "preTag";
+@import "typo";
+
+/* ------------------------------------start------------------------------------ */
+.contant {
+  width: 60vw;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.wlcmText {
+  line-height: 2;
+  text-align: center;
+  color: rgb(97, 96, 96);
+  font-size: 13px;
+}
+
+/* ---------------------------Ul Nav-------------------------- */
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  /* min-height: 70vh; */
+}
+.nav-link {
+  text-transform: uppercase;
+  margin: 1rem 2rem;
+  text-align: center;
+  background: orangered;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.1s linear;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.534);
+}
+.nav-link:active {
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+/* ------------------title---------------------- */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(185, 185, 185, 0.233);
+  padding: 1rem 0;
+  color: orangered;
+}
+
+main {
+  min-height: 100vh;
+}

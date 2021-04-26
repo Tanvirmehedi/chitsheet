@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChitSheet</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="img/devtjw.png" class="logo" alt="logo" />
+      <span><b>Tutorial-Esantial</b></span>
+      <span><a href="index.html">Home</a></span>
+    </nav>
+    <div class="container">
+      <!------------------------- Main Content --------------------------->
+      <main>
+        <div class="contant">
+          <!-- ==============================================** ==================================-->
+          <pre class="language-html"><code>
+&lt;!=====================================2ndsec==========================================--&gt;
+            </code></pre>
+          <!-- ==============================================** ==================================-->
+          <!-- ============================================== 1st Sec ==================================-->
+          <section class="1stsec">
+            <div class="title"><strong>Npm And Scss Install</strong></div>
+            <div class="wlcmText">
+              If only use sass without autoprefixer and css build process
+            </div>
+            <pre class="language-js mt"><code>
+  //its init packge.jason file on project
+  npm init
+  
+  //its install sass for new Project in dipendency Mood
+  npm install node-sass --save-dev
+  
+  //then Make sass Folder and make file name main.scss for basic  Sass compiler
+  //go to pakage.jsone file and change scripts
+  "compile:sass" : "node-sass sass/main.scss css/style.css -w"
+  
+  //then comand line 
+  npm run sass
+            </code></pre>
+          </section>
+          <!-- ==============================================end 1st Sec ==================================-->
+
+          <section class="2ndsec">
+            <div class="title">
+              <strong> Setting Up Build Precess With NPM Scripts </strong>
+            </div>
+            <div class="wlcmText">
+              Use If Need Final Version Of Css And Project Ready For Build
+              Process
+            </div>
+            <pre class="language-js"><code>
+//npm run all install for final build css prosses one time 
+npm install npm-run-all --save-dev
+
+// watch sass 
+"watch:sass" : "node-sass sass/main.scss css/style.css -w",
+
+//live server 
+"devserver":"live-server",
+
+//npm start for sass and server same time 
+"start":"npm-run-all --parallel devserver watch:sass",
+
+//start cli 
+npm run start
+
+//compile sass
+"compile:sass": "node-sass sass/main.scss css/style.comp.css",
+
+//autoprefix css and post css comment line 
+npm install autoprefixer --save-dev
+npm install postcss-cli --save-dev
+
+//prefix css script in package.jason
+"prefix:css":"postcss --use autoprefixer -b 'last 10 version' css/style.comp.css -o css/style.prefix.css",
+
+//compress css 
+"compress:css":"node-sass css/style.prefix.css css/style.css --output-style compressed",
+
+//final build in one comment 
+"build:css": "npm-run-all compile:sass prefix:css compress:css"
+
+//cli command 
+npm run build:css
+            </code></pre>
+          </section>
+          <!--=====================================2ndsec==========================================-->
+        </div>
+      </main>
+      <!------------------------- End Main Content --------------------------->
+      <footer>
+        <div class="title"><a href="#">@All Right Reserve DevTj 2021</a></div>
+      </footer>
+    </div>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

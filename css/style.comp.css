@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  --nav-font: "Zen Dots", cursive;
+  --body-font: "Noto Serif", serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  overflow-x: hidden;
+  line-height: 1.5;
+  font-family: var(--body-font); }
+
+.logo {
+  width: 6%;
+  margin-right: 0.5rem; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  padding: 1rem 0;
+  color: #fff;
+  font-family: var(--nav-font); }
+
+nav span b {
+  font-size: 1.2rem;
+  letter-spacing: 2.5px; }
+
+nav span a {
+  margin-left: 100%;
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #fff;
+  border-radius: 0.9rem;
+  color: #fff;
+  transition: all 0.5s linear;
+  letter-spacing: 2px; }
+
+nav span a:hover {
+  color: orangered;
+  border-color: orangered; }
+
+/* -------------------footer -------------------- */
+footer a {
+  color: orangered;
+  letter-spacing: 2px; }
+
+/* -----------------------------------button ------------------------ */
+div.code-toolbar > .toolbar a,
+div.code-toolbar > .toolbar button,
+div.code-toolbar > .toolbar span {
+  font-size: 1.2rem !important;
+  cursor: pointer; }
+
+code {
+  font-size: 1.5rem !important; }
+
+.mt {
+  margin-top: 3rem !important; }
+
+strong {
+  font-size: 1.5rem !important; }
+
+/* ------------------------------------start------------------------------------ */
+.contant {
+  width: 60vw;
+  margin: 0 auto;
+  padding: 1rem 0; }
+
+.wlcmText {
+  line-height: 2;
+  text-align: center;
+  color: #616060;
+  font-size: 13px; }
+
+/* ---------------------------Ul Nav-------------------------- */
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+  /* min-height: 70vh; */ }
+
+.nav-link {
+  text-transform: uppercase;
+  margin: 1rem 2rem;
+  text-align: center;
+  background: orangered;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600; }
+
+/* ------------------title---------------------- */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(185, 185, 185, 0.233);
+  padding: 1rem 0;
+  color: orangered; }
+
+main {
+  min-height: 100vh; }
