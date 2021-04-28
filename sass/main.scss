@@ -22,14 +22,15 @@
 .nav-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   position: relative;
+  flex-wrap: wrap;
   /* min-height: 70vh; */
 }
 .nav-link {
   text-transform: uppercase;
-  margin: 1rem 2rem;
+  margin: 2rem 3rem;
   text-align: center;
   background: orangered;
   padding: 1rem 2rem;
@@ -40,6 +41,7 @@
   font-weight: 600;
   transition: all 0.1s linear;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.534);
+  width: 300px;
 }
 .nav-link:active {
   transform: translateY(4px);
