@@ -18,6 +18,9 @@ a {
 
 html {
   font-size: 62.5%; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    html {
+      font-size: 8.5%; } }
 
 body {
   overflow-x: hidden;
@@ -27,6 +30,9 @@ body {
 .logo {
   width: 6%;
   margin-right: 0.5rem; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .logo {
+      width: 20%; } }
 
 nav {
   display: flex;
@@ -36,10 +42,17 @@ nav {
   padding: 1rem 0;
   color: #fff;
   font-family: var(--nav-font); }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    nav {
+      padding: 10rem 0; } }
 
 nav span b {
   font-size: 1.2rem;
   letter-spacing: 2.5px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    nav span b {
+      font-size: 5.2rem;
+      letter-spacing: 1.5px; } }
 
 nav span a {
   margin-left: 100%;
@@ -50,6 +63,10 @@ nav span a {
   color: #fff;
   transition: all 0.5s linear;
   letter-spacing: 2px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    nav span a {
+      margin-left: 36%;
+      font-size: 9.3rem; } }
 
 nav span a:hover {
   color: orangered;
@@ -81,6 +98,10 @@ strong {
   width: 60vw;
   margin: 0 auto;
   padding: 1rem 0; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .contant {
+      width: 88vw;
+      padding: 10rem 0; } }
 
 .wlcmText {
   line-height: 2;
@@ -92,14 +113,15 @@ strong {
 .nav-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   position: relative;
+  flex-wrap: wrap;
   /* min-height: 70vh; */ }
 
 .nav-link {
   text-transform: uppercase;
-  margin: 1rem 2rem;
+  margin: 2rem 3rem;
   text-align: center;
   background: orangered;
   padding: 1rem 2rem;
@@ -109,7 +131,12 @@ strong {
   font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.1s linear;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.534); }
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.534);
+  width: 300px; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .nav-link {
+      font-size: 8rem;
+      margin: 10rem 0; } }
 
 .nav-link:active {
   transform: translateY(4px);
@@ -123,6 +150,11 @@ strong {
   background-color: rgba(185, 185, 185, 0.233);
   padding: 1rem 0;
   color: orangered; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .title {
+      padding: 2rem 0;
+      font-size: 8rem;
+      letter-spacing: 3px; } }
 
 main {
   min-height: 100vh; }
