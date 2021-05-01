@@ -17,7 +17,11 @@ a {
   text-decoration: none; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /*iPads, Tablets*/ }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+      font-size: 48.5%; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     html {
       font-size: 8.5%; } }
@@ -30,6 +34,9 @@ body {
 .logo {
   width: 6%;
   margin-right: 0.5rem; }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .logo {
+      width: 17%; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     .logo {
       width: 20%; } }
@@ -41,7 +48,19 @@ nav {
   background-color: #222;
   padding: 1rem 0;
   color: #fff;
-  font-family: var(--nav-font); }
+  font-family: var(--nav-font);
+  /*Desktops, large screens*/
+  /*Small screens, laptops*/
+  /*iPads, Tablets*/ }
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    nav {
+      padding: 2rem 0; } }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    nav {
+      padding: 2rem 1rem; } }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+      padding: 2rem 1rem; } }
   @media screen and (min-width: 320px) and (max-width: 480px) {
     nav {
       padding: 10rem 0; } }
@@ -66,6 +85,7 @@ nav span a {
   @media screen and (min-width: 320px) and (max-width: 480px) {
     nav span a {
       margin-left: 36%;
+      padding: 4rem;
       font-size: 9.3rem; } }
 
 nav span a:hover {
@@ -85,13 +105,18 @@ div.code-toolbar > .toolbar span {
   cursor: pointer; }
 
 code {
-  font-size: 1.5rem !important; }
+  font-size: 1.5rem !important;
+  /*Mobile devices*/
+  font-size: 8rem; }
 
 .mt {
   margin-top: 3rem !important; }
 
-strong {
+li > .wlcmText strong {
   font-size: 1.5rem !important; }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    li > .wlcmText strong {
+      font-size: 8rem !important; } }
 
 /* ------------------------------------start------------------------------------ */
 .contant {
