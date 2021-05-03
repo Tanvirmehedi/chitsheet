@@ -106,8 +106,10 @@ div.code-toolbar > .toolbar span {
 
 code {
   font-size: 1.5rem !important;
-  /*Mobile devices*/
-  font-size: 8rem; }
+  /*Mobile devices*/ }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    code {
+      font-size: 8rem !important; } }
 
 .mt {
   margin-top: 3rem !important; }
