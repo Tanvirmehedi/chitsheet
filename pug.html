@@ -63,13 +63,11 @@ nodemon filename
 const { urlencoded } = require("express");
 const express = require("express");
 const path = require("path");
-const fs = require("fs");
 const app = express();
 const port = 3000;
 
 //EXPRESS SPECIFIC STUFF
 app.use("/static", express.static("static"));
-app.use(express.urlencoded());
 
 //PUG SPACIFIC STUFF
 app.set("view engine", "pug"); //Set the template engine as pug
@@ -83,18 +81,6 @@ app.get("/", (req, res) => {
 
 //END POINT FOR POST REQUEST
 app.post('/',(req,res)=>{
-// console.log(req.body);
-  nam = req.body.name
-  age = req.body.age
-  gender= req.body.gender
-  adress= req.body.adress
-  msg = req.body.msg
-
-//VAR FOR STORE DATA FROM SUBMIT
-  let outputFileName = `Client Name is ${nam} ,client age ${age}, client gender ${gender} ,client adress ${adress} ,client message ${msg}`;
-
-//WRITE FILE SYSTAM
-  fs.writeFileSync("output.txt",outputFileName);
 
   const peram = {message:"This is post message"};
   res.status(200).render("index.pug",peram);
