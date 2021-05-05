@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChitSheet</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav>
+        <img src="img/devtjw.png" class="logo" alt="logo" />
+        <span><b>Tutorial-HomePage</b></span>
+        <span><a href="index.html">Home</a></span>
+    </nav>
+    <div class="container">
+        <!------------------------- Main Content --------------------------->
+        <main>
+            <div class="contant">
+                <h2 class="title">Start MongoDB.</h2>
+                <div class="wlcmText">You can start the mongod process by issuing the following command:</div>
+                <pre class="language-linux"><code>
+sudo systemctl start mongod
+                </code></pre>
+                <div class="wlcmText">If you receive an error similar to the following when starting mongod:
+
+                    Failed to start mongod.service: Unit mongod.service not found.
+
+                    Run the following command first:</div>
+                <pre class="language-js"><code>
+sudo systemctl daemon-reload
+                </code></pre>
+                <h2 class="title">Verify that MongoDB has started successfully.</h2>
+                <pre class="language-cli"><code>
+sudo systemctl status mongod
+                </code></pre>
+                <div class="wlcmText">
+                    You can optionally ensure that MongoDB will start following a system reboot by issuing the following
+                    command:
+                </div>
+                <pre class="language-js"><code>
+sudo systemctl enable mongod
+                </code></pre>
+                <h2 class="title">Stop MongoDB.</h2>
+                <div class="wlcmText">As needed, you can stop the mongod process by issuing the following command:</div> 
+                <pre class="language-js"><code>
+sudo systemctl stop mongod
+                </code></pre>
+                <h2 class="title">Restart MongoDB.</h2>
+                <div class="wlcmText">You can restart the mongod process by issuing the following command:</div> 
+                <pre class="language-js"><code>
+sudo systemctl restart mongod
+                </code></pre>
+                <div class="wlcmText">You can follow the state of the process for errors or important messages by watching the output in the /var/log/mongodb/mongod.log file.</div>
+                <h2 class="title">Begin using MongoDB.</h2>
+                <div class="wlcmText">Start a mongo shell on the same host machine as the mongod. You can run the mongo shell without any command-line options to connect to a mongod that is running on your localhost with default port 27017:</div>
+                <pre class="language-js"><code>           
+mongo
+                </code></pre>
+            </div>
+            </main>
+        <!------------------------- End Main Content --------------------------->
+        <footer>
+            <div class="title"><a href="#">@All Right Reserve DevTj 2021</a></div>
+        </footer>
+    </div>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
